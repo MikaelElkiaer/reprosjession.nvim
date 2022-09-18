@@ -50,6 +50,13 @@ They are listed here, along with their default value.
 - `search_pattern`: Any directory with a `.git` folder (i. e. `"%.git$"`). The pattern is used to identify a repository by its content, the actual result will be the parent directory of the match.
 - `depth`: 5, the max depth from the `path` directory to look for the search pattern - a simple performance optimization. Personally, I have a structure like so: `$HOME/Repositories/{vendor}/{organisation}/{repo}` and no deeper.
 
+## TODO
+
+1. Add setup method to configure the plugin and its dependencies
+2. Option for sorting repositories based on usage frequency, or other parameters
+3. Drop file-browser and auto-session dependencies, and instead have options for actions
+4. Option for displaying repository readme content in previewer
+
 ## Etymology
 
 Self-explanatory...
