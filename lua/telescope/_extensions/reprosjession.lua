@@ -14,7 +14,7 @@ local scan = require "plenary.scandir"
 
 local finder = function(opts)
   opts = opts or {}
-  local dirs = scan.scan_dir(vim.loop.os_homedir(), {
+  local dirs = scan.scan_dir(opts.root_dir or vim.loop.os_homedir(), {
     hidden = true,
     only_dirs = true,
     search_pattern = "%.git$",
